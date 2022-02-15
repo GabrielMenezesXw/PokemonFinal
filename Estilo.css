@@ -1,0 +1,226 @@
+    html,
+    body {
+        margin: 0px;
+    }
+
+    /* Layout */
+    #grid-container {
+        background-color: black;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 0.3fr 0.7fr;
+        grid-template-rows: 0.3fr 1fr 0.3fr;
+        gap: 6px;
+        grid-template-areas:
+            "header header"
+            "lateral corpo"
+            "footer footer";
+    }        
+    #titulo {
+        display: flex;
+        align-items: center;
+        max-width: 500px;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+    }
+
+    .grid-header-item {
+        grid-area: header;
+        background-color: red;
+    }
+
+    .grid-corpo-item {
+        grid-area: corpo;
+        background-color: cyan;
+    }
+
+    .grid-lateral-item {
+        grid-area: lateral;
+        background-color: white;
+    }
+
+    .grid-footer-item {
+        grid-area: footer;
+        background-color: red;
+    }
+
+    .main-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .pokedex {
+        flex-direction: column;
+        border: solid black;
+        background-color: red;
+        height: 420px;
+        width: 300px;
+        border-radius: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    #imagemPoke {
+        flex-grow: 1;
+    }
+
+    .visor {
+        display: flex;
+        justify-content: center;
+        margin-top: 7%;
+        height: 180px;
+        width: 220px;
+        border: solid;
+        background-color: white;
+        border: solid black;
+        border-radius: 10%;
+    }
+
+    .busca {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        border-radius: 10%;
+
+    }
+
+    #resultado {
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .side-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #containerGolpes {
+        border: solid black 1px;
+        background-color: aliceblue;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 240px;
+        height: 80px;
+        overflow-y: auto;
+    }
+
+    #containerTipos {
+        text-transform: capitalize;
+        font-weight: 100;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .tipoBox {
+
+        padding: 6px;
+        border-radius: 20px;
+        margin: 2px;
+        text-align: center;
+
+    }
+
+    .grass {
+        background-color: #78C850;
+        border: 1px solid #4E8234;
+
+    }
+
+    .poison {
+        background-color: #A040A0;
+        border: 1px solid#682A68;
+    }
+
+    .fire {
+        background-color: #F08030;
+        border: 1px solid#9C531F;
+    }
+
+    .normal {
+        background-color: #A8A878;
+        border: 1px solid#6D6D4E;
+    }
+
+    .fighting {
+        background-color: #C03028;
+        border: 1px solid#7D1F1A;
+    }
+
+    .water {
+        background-color: #6890F0;
+        border: 1px solid #445E9C;
+    }
+
+    .flying {
+        background-color: #A890F0;
+        border: 1px solid #6D5E9C;
+    }
+
+    .electric {
+        background-color: #F8D030;
+        border: 1px solid #A1871F;
+    }
+
+    .ground {
+        background-color: #E0C068;
+        border: 1px solid #927D44;
+    }
+
+    .psychic {
+        background-color: #F85888;
+        border: 1px solid #A13959;
+    }
+
+    .rock {
+        background-color: #B8A038;
+        border: 1px solid #786824;
+    }
+
+    .ice {
+        background-color: #98D8D8;
+        border: 1px solid #638D8D;
+    }
+
+    .bug {
+        background-color: #A8B820;
+        border: 1px solid #6D7815;
+    }
+
+    .dragon {
+        background-color: #7038F8;
+        border: 1px solid #4924A1;
+    }
+
+    .ghost {
+        background-color: #7038F8;
+        border: 1px solid #4924A1;
+    }
+
+    .dark {
+        background-color: #705848;
+        border: 1px solid #A29288;
+    }
+
+    .steel {
+        background-color: #B8B8D0;
+        border: 1px solid #787887;
+    }
+
+    .fairy {
+        background-color: #EE99AC;
+        border: 1px solid #9B6470;
+    }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Script2.js"></script>
+    <link rel="stylesheet" href="Estilo2.css">
+    <title>Rick and Morty API</title>
+</head>
+<body id="grid-container">
+    <header class="grid-header-item">
+        <img id="titulo" src="Rick E Morty Main.png">
+    </header>
+    <main class="grid-corpo-item main-flex-container">
+        <div class="card_busca">
+            <input id="id_personagem" type="number">
+            <button onclick="buscarPersonagem()">Buscar</button>
+        </div>
+    
+        <div class="card_personagem">
+            <img width="120px" id="imagem_personagem" src="" alt="">
+    
+            <div id="resultado"></div>
+        </div>
+    </main>
+    <side class="grid-lateral-item side-flex">
+        <a href="RickAndMorty.html">Rick E Morty</a>
+        <a href="Index.html">Pokemon</a>
+    </side>
+    <footer class="grid-footer-item">Rodapé</footer>
+</body>

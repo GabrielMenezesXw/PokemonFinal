@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Script.js"></script>
+    
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Projeto Pokemon</title>
+</head>
+
+<body id="grid-container">
+    <header class="grid-header-item">
+        <img id="titulo" src="PokemonMain.png">
+    </header>
+    <main class="grid-corpo-item main-flex-container">
+        <div class="pokedex">
+            <div class="visor">
+                <img id="imagemPoke" src="" alt="">
+            </div>
+            <div clas="botao-dex"></div>
+
+            <div class="busca">
+                <input id="namePokemon" type="text">
+                <button onclick="buscarPokemon()" id="search_button">Buscar</button>
+            </div>
+            <div id="resultado">
+                <div id="containerNome"></div>
+                <div id="containerGolpes">
+
+                </div>
+                <div id="containerTipos"></div>
+            </div>
+        </div>
+    </main>
+    <side class="grid-lateral-item side-flex">
+        <a href="RickAndMorty.html">Rick E Morty</a>
+        <a href="Index.html">Pokemon</a>
+    </side>
+    <footer class="grid-footer-item">Rodapé</footer>
+</body>
+
+</html>
